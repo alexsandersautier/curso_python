@@ -1,6 +1,9 @@
-largura = 5
-altura = 2.9
-profundidade = 3
+largura: float = float(input('Qual o valor da largura do cômodo:'))
+profundidade: float = float(input('Qual o valor da profundidade do comodo:'))
+altura: float = 2.9
 
-print(2*(largura+profundidade)*altura)
-print(largura*profundidade)
+print(largura)
+print(profundidade)
+
+print("A area das paredes é: " ,
+      (2*(largura+profundidade)*altura))
