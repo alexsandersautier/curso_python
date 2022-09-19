@@ -1,17 +1,13 @@
-<<<<<<< HEAD
-largura = float = 5
-altura = float = 2.9
-profundidade = 3
-print(2 * (largura+profundidade)*altura)
-print(largura*profundidade)
-=======
 largura: float = float(input('Qual o valor da largura do cômodo:'))
 profundidade: float = float(input('Qual o valor da profundidade do comodo:'))
 altura: float = 2.9
 
-print(largura)
-print(profundidade)
+area_paredes: float = (2*(largura+profundidade)*altura)
+print("A area das paredes é: " , str(area_paredes))
 
-print("A area das paredes é: " ,
-      (2*(largura+profundidade)*altura))
->>>>>>> ef9edc43360159da041ba2871d1a1e51eeb2c8ef
+area_teto: float = largura * profundidade
+print('A area do teto é:', area_teto)
+
+print('A litragem de de tinta necessária é: ',
+      (area_paredes + area_teto)/10
+)
